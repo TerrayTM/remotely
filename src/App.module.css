@@ -1,0 +1,157 @@
+.Hero {
+    background-color: #a79b9b;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    border-bottom: 1px solid cyan;
+    background-color: #7395AE;
+    background: linear-gradient(to bottom, #a681e0 0%, #4e4997 100%);
+}
+
+.Hero > h2 {
+    margin: 16px 0 26px 0;
+    color: aliceblue;
+    text-align: center;
+}
+
+.ButtonHolder button {
+    user-select: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #359b6d;
+    color: aliceblue;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+.ButtonHolder button:hover {
+    background-color: #3da777
+}
+
+.ButtonHolder button:disabled {
+    opacity: 0.5;
+    background-color: #359b6d;
+    cursor: not-allowed;
+}
+
+.ButtonHolder button:first-child {
+    margin-right: 10px;
+}
+
+.Download {
+    position: relative;
+    padding-left: 50px !important;
+}
+
+.Download::before {
+    position: absolute;
+    content: " ";
+    left: 16px;
+    top: 6.5px;
+    background-image: url(./assets/img/windows.png);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+
+.Footer {
+    background-color: #314152;
+    color: aliceblue;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer p {
+    margin: 0;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+.Description {
+    padding: 80px 0;
+    background-color: #E8F5FF;
+}
+
+.Description div:first-child {
+    margin-top: 0;
+}
+
+.Header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 26px;
+}
+
+.Header a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.Header a:hover {
+    opacity: 1.0;
+}
+
+.File {
+    border-radius: 4px;
+    background-color: #3fce3f;
+    padding: 4px 8px;
+    color: white;
+    margin: 8px 0 0 8px;
+}
+
+.File:last-child {
+    margin-right: 0;
+}
+
+.FileHolder {
+    padding: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -8px;
+    justify-content: center;
+}
+
+.Break {
+    display: none;
+}
+
+.Info {
+    padding: 60px 0;
+    background-color: #d4e6f5;
+}
+
+.Info h2 {
+    margin-top: 0;
+}
+
+.Info > div {
+    width: 80%;
+    margin: auto;
+    max-width: 720px;
+    text-align: justify;
+}
+
+.Info hr {
+    border: none;
+    border-bottom: 1px solid blue;
+}
+
+@media (max-width: 530px) {
+    .Break {
+        display: block;
+    }
+}

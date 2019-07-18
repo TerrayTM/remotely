@@ -1,0 +1,29 @@
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.Logo > h1 {
+    font-size: 60px;
+    margin: 0;
+    color: aliceblue;
+}
+
+.Logo > div {
+    margin-right: 14px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../assets/img/remotely-icon.png);
+    background-size: cover;
+}
+
+.Small > h1 {
+    color: black;
+    font-size: 20px;
+}
+
+.Small > div {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+}
